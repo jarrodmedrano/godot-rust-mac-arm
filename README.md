@@ -1,5 +1,7 @@
 # Rust and Godot and Mac, living together in peace
 
+<img src="rust-godot-mac.jpg" width="200" height="200" alt="Godot, Rust, and Mac" align="right" />
+
 I built this starter repo, I was having trouble getting it to work by following other people's tutorials. Hopefully this helps someone.
 
 This repo is specifically for people who use Macs with the M1 chip.
