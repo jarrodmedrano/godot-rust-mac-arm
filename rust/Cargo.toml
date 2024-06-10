@@ -2,9 +2,13 @@
 name = "rust"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.78"
+license = "MPL-2.0"
+publish = false
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-crate-type = ["cdylib", "staticlib"]
+[lib]
+crate-type = ["cdylib"]
 
 [dependencies]
-godot = { git = "https://github.com/godot-rust/gdext", branch = "master" }
+godot = { git = "https://github.com/godot-rust/gdext", branch = "master", default-features = false, features = ["experimental-wasm"] }
+rand = "0.8"

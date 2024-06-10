@@ -1,12 +1,7 @@
+use godot::prelude::*;
 mod player;
 
-use godot::prelude::*;
-
-pub struct RustExtension;
+struct RustExtension;
 
 #[gdextension]
-unsafe impl ExtensionLibrary for RustExtension {
-    fn name() -> &'static str {
-        "RustExtension"
-    }
-}
+unsafe impl ExtensionLibrary for RustExtension {}
